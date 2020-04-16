@@ -1,0 +1,1 @@
+thi its proyect simple shell
