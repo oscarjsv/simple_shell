@@ -1,0 +1,35 @@
+.TH "2020-16-04" "V3.0"
+.TH HSH 1 "Simple Shell Man page"
+.SH NAME
+.B hsh
+- UNIX command interpreter (shell)
+.SH SYNOPSIS
+.B ./hsh
+.SH DESCRIPTION
+The hsh program simulates the basic Linux shell commands, especially those inside / bin /.
+.SH How to use it
+
+.Pp 
+We compile with the following line
+
+
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+.Pp
+To run it, we type the following.
+
+.B $ ./hsh
+
+.Pp Commands that can be executed
+
+~$ /bin/ls
+
+~$ /bin/ls -la
+
+~$/bin/ps
+
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Oscar Reynolds / Jesus Gonzalez.
