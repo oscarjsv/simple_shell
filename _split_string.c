@@ -2,7 +2,7 @@
 /**
 *_split_string - split the text string
 *@line: text read.
-*return: the  split text.
+*Return: pieces
 */
 char **_split_string(char *line)
 {
