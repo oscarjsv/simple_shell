@@ -8,8 +8,11 @@ int _exec(char **com)
 {
 	pid_t pid_chid;
 	int status;
+	
 
 	pid_chid = fork();
+	
+		
 
 	if (pid_chid == -1)
 	{
@@ -17,10 +20,14 @@ int _exec(char **com)
 	}
 	if (pid_chid == 0)
 	{
-
+		
 		if (execve(com[0], com, NULL) == -1)
 		{
-			perror("Error: execve");
+			perror("./shell: No such file or directory");
+		}
+		else
+		{
+			execve(com[0], com, NULL);
 		}
 	}
 	else
@@ -30,3 +37,5 @@ int _exec(char **com)
 
 	return (0);
 }
+
+
